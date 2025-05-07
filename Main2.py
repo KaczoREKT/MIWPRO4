@@ -20,7 +20,8 @@ def train_model(X, y):
     F = np.hstack([X, np.ones(X.shape)])
     V = np.linalg.inv(F.T @ F) @ F.T @ y
     E = y - (V[0] * X + V[1])
-    print((E.T @ E) / len(E))
+    MSE = (E.T @ E) / len(E)
+    print(MSE)
     return V
 
 

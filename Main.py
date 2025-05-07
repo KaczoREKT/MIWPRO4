@@ -18,7 +18,7 @@ def load_data():
 
 def create_design_matrix(X, degree):
     """Tworzy macierz cech dla wielomianu stopnia `degree`."""
-    return np.hstack([X ** i for i in reversed(range(degree + 1))])
+    return np.hstack([X ** 2])
 
 def train_model(X, y, degree=1, lr=0.01, epochs=1000):
     """Trenowanie modelu."""
