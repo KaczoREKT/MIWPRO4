@@ -5,27 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a63dd32c-1f59-4826-9685-feaa3e0ac784" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/MIWPRO4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane11.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane12.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane13.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane14.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane15.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane16.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dane/dane9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainSzmigiel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MIWPRO4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MIWPRO4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +50,10 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/STUDIA/MIW/MIWPRO4&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -87,14 +72,13 @@
   <component name="RunManager">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="MIWPRO4" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.13 (MIWPRO4)" />
+      <option name="SDK_NAME" value="Python 3.12 (MIWPRO4)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -109,6 +93,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Main2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="MIWPRO4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (MIWPRO4)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="Main2.py" />
+      <option name="PARAMETERS" value="-s Dane/dane2.txt" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Main" />
+      <item itemvalue="Python.Main2" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -130,6 +141,10 @@
       <workItem from="1745064248508" duration="2221000" />
       <workItem from="1745437315328" duration="214000" />
       <workItem from="1745437538665" duration="3455000" />
+      <workItem from="1745445861980" duration="205000" />
+      <workItem from="1746496031275" duration="4482000" />
+      <workItem from="1746544287433" duration="199000" />
+      <workItem from="1746545677314" duration="4395000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -150,6 +165,8 @@
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MIWPRO4$Main.coverage" NAME="Main Coverage Results" MODIFIED="1745440463217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/MIWPRO4$Main2.coverage" NAME="Main2 Coverage Results" MODIFIED="1746547901667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/MIWPRO4$MainSzmigiel.coverage" NAME="MainSzmigiel Coverage Results" MODIFIED="1746549455361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MIWPRO4$Main.coverage" NAME="Main Coverage Results" MODIFIED="1746547971814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

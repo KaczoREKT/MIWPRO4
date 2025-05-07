@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 
 
 def load_data():
+    """Ładowanie danych z ArgumentParser"""
     parser = argparse.ArgumentParser(description='Wczytuje dane.')
     parser.add_argument("-s", type=argparse.FileType('r'), help="np. -s Dane/daneXX.txt", required=True)
     args = parser.parse_args()
@@ -19,8 +20,8 @@ def create_design_matrix(X, degree):
     """Tworzy macierz cech dla wielomianu stopnia `degree`."""
     return np.hstack([X ** i for i in reversed(range(degree + 1))])
 
-
 def train_model(X, y, degree=1, lr=0.01, epochs=1000):
+    """Trenowanie modelu."""
     m = X.shape[0]
     F = create_design_matrix(X, degree)
     w = np.zeros((F.shape[1], 1))
@@ -33,8 +34,8 @@ def train_model(X, y, degree=1, lr=0.01, epochs=1000):
 
     return w
 
-
 def evaluate_model(X_test, y_test, w, degree):
+    """Przewidywanie MSE funkcji."""
     F_test = create_design_matrix(X_test, degree)
     y_pred = F_test @ w
     mse = mean_squared_error(y_test, y_pred)
@@ -42,12 +43,13 @@ def evaluate_model(X_test, y_test, w, degree):
 
 
 def print_model_equation(w):
+    """Dopasowana funkcja liniowa do danych."""
     terms = [f"{coef:.4f} * x^{i}" if i > 0 else f"{coef:.4f}"
              for i, coef in zip(range(len(w)-1, -1, -1), w.flatten())]
     print("Dopasowana funkcja: y =", " + ".join(terms))
 
-
 def visualize(X, y, w, degree):
+    """Wizualizacja matplotlib"""
     plt.scatter(X, y, label='Dane treningowe', color='blue')
     x_vals = np.linspace(X.min(), X.max(), 200).reshape(-1, 1)
     X_poly = create_design_matrix(x_vals, degree)
