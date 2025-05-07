@@ -50,12 +50,14 @@ if __name__ == "__main__":
     # Sortowanie danych dla płynnych wykresów
     X_sorted = np.sort(X, axis=0)
     y_lin_pred = V[0] * X_sorted + V[1]
-    y_lin_iter_pred = V_iter[0] * X_sorted + V_iter[1]
     y_quad_pred = V1[0] * X_sorted ** 2 + V1[1] * X_sorted + V1[2]
 
+    x_vals = np.linspace(X_train.min(), X_train.max(), 200).reshape(-1, 1)
+    X_poly = np.hstack([x_vals**2])
+    y_vals = X_poly @ V_iter
     plt.plot(X, y, 'ro', label="Dane")
     plt.plot(X_sorted, y_lin_pred, 'b--', label="Regresja liniowa (analityczna)")
-    plt.plot(X_sorted, y_lin_iter_pred, 'g--', label="Regresja liniowa (iteracyjna)")
+    plt.plot(x_vals, y_vals, 'g--', label="Regresja liniowa (iteracyjna)")
     plt.plot(X_sorted, y_quad_pred, 'm-', label="Regresja kwadratowa")
     plt.xlabel('x')
     plt.ylabel('y')
